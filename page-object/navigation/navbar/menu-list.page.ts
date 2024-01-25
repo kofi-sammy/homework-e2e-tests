@@ -8,8 +8,8 @@ class UserMenuListPage extends MainPage{
 
     constructor(page: Page){
         super(page);
-        this.userSettingButton = this.page.locator('#menu-list-165-menuitem-162');
-        this.logoutButton = this.page.locator('#menu-list-165-menuitem-163');
+        this.userSettingButton = this.page.locator('a[href="/settings/personal"]');
+        this.logoutButton = this.page.locator('a[href="/logout"]');
     }
     
     /**
