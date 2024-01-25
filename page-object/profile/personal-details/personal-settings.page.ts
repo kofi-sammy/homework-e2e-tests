@@ -8,8 +8,8 @@ class PersonalSettingsPage extends MainPage{
   
   constructor(page: Page){
     super(page);
-    this.accountSetting = this.page.locator('a[href="/workspace/497409/settings/personal/account"]');
-    this.securitySetting = this.page.locator('a[href="/workspace/497409/settings/personal/security"]');
+    this.accountSetting = this.page.locator('a[href*="/personal/account"]');
+    this.securitySetting = this.page.locator('a[href*="/personal/security"]');
   }
 
     /**
