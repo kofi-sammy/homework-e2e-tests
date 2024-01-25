@@ -11,14 +11,14 @@ class TopNavBar extends MainPage{
 
     constructor(page: Page){
         super(page);
-        this.userProfileButton = this.page.locator('#menu-button-10');
+        this.userProfileButton = this.page.locator('button.chakra-menu__menu-button');
     }
 
     /** 
      * User profile.
      */
     async goToUserProfile(): Promise<void>{
-        await this.userProfileButton.click();
+        await this.userProfileButton.last().click();
     }
      
 }
